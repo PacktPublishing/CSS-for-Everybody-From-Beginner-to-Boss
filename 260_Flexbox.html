@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 201</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container div {
+            /* border: 1px solid red; */
+        }
+        .navigation {
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        .content {
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .header {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="navigation">Navigation</div>
+        <div class="content">
+
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos totam ducimus! Animi perspiciatis eligendi minima quis, blanditiis, amet, cupiditate ipsa reprehenderit nemo veniam voluptas provident. Est impedit qui eius.</p>
+            <h3>Hello world again</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste suscipit aliquam, deserunt culpa ullam voluptas animi enim praesentium autem nam nulla placeat commodi velit fugiat. Commodi corporis dolore distinctio culpa!</p>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
